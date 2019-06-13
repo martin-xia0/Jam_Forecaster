@@ -1,0 +1,12 @@
+{
+    "layers": [
+        {"type": "lstm", "neurons": 300, "input_timesteps": 15, "input_dim": 43, "return_seq": false},
+        {"type": "dropout", "rate": 0.1},
+        {"type": "dense", "neurons": 43, "activation": "relu"}
+    ],
+    "loss": "mean_squared_error",
+    "optimizer": "sgd",
+    "epochs": 100,
+    "batch_size": 64,
+    "steps_per_epoch": 100
+}
