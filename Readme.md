@@ -30,7 +30,7 @@ We completed the experiments on the dataset. We applied LSTM, STGCN, and out EBS
 <img src="experiment.png">
 To measure and evaluate the performance of different methods, mean absolute percentage error, mean absolute error and root mean square error are adopted. Previous work has already proved that deep learning methods such as FC-LSTM and STGCN have better performance than traditional methods such as history average and ARIMA, so we only compare the most efficient methods in our experiment. As you can see, our method has slight improvement on the performance. For example, as for 15 minutes prediction, mean absolute error reduces about 1% percent.
 
-### Innovation
+### Performance
 
 First, the adjacent matrix is based on road segment, not coordinate points.
 This means our results conform drivers’ habits. Drivers generally analyze the congestion situation by road segments, not points. When your family stuck in the traffic jam, your father may always say “This road is blocked!” rather than “This point is blocked!”
