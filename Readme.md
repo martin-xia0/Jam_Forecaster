@@ -11,7 +11,7 @@ Since people often use sections to show whether a road is congested or not, rath
 The framework STGCN consists of two spatio-temporal convolution blocks and a fully connected output layer in the end. Each spatio-temporal convolution block contains two temporal gated convolution layers and one spatial graph convolution in the middle.
 
 Based on this framework, we make some improvement. In STGCN, the adjacent matrix is computed based on the distances among points in the traffic network. As this formula shows, the matrix is a function of straight-line distances, if the distance is larger than threshold, the weight is set to 0. This matrix does not encompass the logical connections between each road segment.
-
+<img src="structure.png">
 We propose another method to generate graph matrix, which is based on edge – road segment. Each weight in the adjacent matrix represents the topological relationship between two road segments. If there’s only one turn between two road, the weight is 1, if more turns are needed, the weight is less than 1. Our matrix shows the topological connections between two road, thus closer to the real situation.
 
 ### Data
